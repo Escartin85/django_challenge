@@ -46,10 +46,10 @@ Challenge of Python, Django, Postgres and Docker for Klarian LTD
 
 Describe the project structure, directories, and their contents.
 
-- klarianTest
+- app
+  Folder where is allocated all the app to run it.
+  
 - samples_test
+  Folder where are allocated files as sample .csv and .json to test the app
 
-## Configuration
-
-Explain if there are any specific configurations that need to be modified.
 
