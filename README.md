@@ -5,6 +5,7 @@ Challenge of Python, Django, Postgres and Docker for Klarin LTD
 
 - Docker
 - Docker Compose
+- Python 3
 
 ## Usage Instructions
 
@@ -23,7 +24,9 @@ Challenge of Python, Django, Postgres and Docker for Klarin LTD
 3. Start the application:
 
     ```bash
-    docker-compose up
+    docker-compose up -d --build
+    docker-compose exec backend python klarianTest/manage.py makemigrations
+    docker-compose exec backend python klarianTest/manage.py migrate
     ```
 
 4. Access the application in your web browser:
